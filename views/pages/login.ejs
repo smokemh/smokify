@@ -13,10 +13,52 @@
     />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="" />
+    <!-- <link rel="shortcut icon" href="/images/favicon.svg" type="image/svg+xml" /> -->
+
+    <!-- Google Fontlink -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Css-->
+    <link rel="stylesheet" href="/public/css/login.css" />
   </head>
 
   <body>
-    <h1>Hello world</h1>
+    <article class="login-page">
+      <div class="banner">
+        <img
+          src="/public/images/login-banner.jpg"
+          width="1080"
+          height="1080"
+          alt=""
+          class="img-cover"
+        />
+      </div>
+
+      <div class="content">
+        <a href="/" class="logo">
+          <img
+            src="/public/images/logo.svg"
+            width="94"
+            height="24"
+            alt="Smokify logo"
+          />
+        </a>
+
+        <div class="wrapper">
+          <h2 class="title headline-medium">
+            <strong>Join us</strong> and embark on an incredible musical
+            <strong>journey!</strong>
+          </h2>
+          <a href="/auth" class="btn btn-primary has icon" data-ripple>
+            <img src="/public/images/spotify-on-primaary.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </article>
   </body>
 </html>
