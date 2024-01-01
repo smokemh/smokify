@@ -114,6 +114,11 @@
 
 .btn{
     margin-inline: auto;
-    margin-block-start: var(--space-4);
+    margin-block-start: var(--space-8);
 }
 
+.title {
+    font-size: var(--fs-display-medium);
+    line-height: var(--lh-display-medium);
+    letter-spacing: var(--1s-n-025);
+}
