@@ -1,0 +1,53 @@
+/* Login Css */
+
+/* Custom Property */
+
+@import url(./variables.css);
+
+/* Reset */
+@import url(./reset.css);
+
+/* Base */
+
+@import url(./base.css);
+
+/* Typography */
+@import url(./typography.css);
+
+/* Reuse style */
+
+.img-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main */
+
+.login-page{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding: var(--space-2);
+    gap: var(--space-2);
+}
+
+:where(.banner, .content){
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-extra-large);
+    overflow: hidden;
+}
+
+.content{
+    background-image: url('/images/login-bg-pattern.png');
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
