@@ -1,3 +1,5 @@
+/* Typography */
+
 .display-large {
   font-size: var(--fs-display-large);
   line-height: var(--lh-display-large);
