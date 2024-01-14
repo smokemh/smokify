@@ -23,10 +23,14 @@ app.use(cors()).use(cookieParser());
 // Custom Modules
 
 const login = require("./src/routes/login.route");
+const auth = require("./src/routes/auth.route");
 
 // Login Page
 
 app.use("/login", login);
+
+// Auth Page
+app.use("/auth", auth);
 
 app.listen(5000, () => {
   console.log("Server listening att http://localhost:5000");
