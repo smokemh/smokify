@@ -14,7 +14,7 @@ const auth = (req, res) => {
   res.cookie(apiConfig.STATE_KEY, state);
 
   res.redirect(
-    "https://accounts.spotify.com/authorize" +
+    "https://accounts.spotify.com/authorize?" +
       querystring.stringify({
         response_type: "code",
         client_id: apiConfig.CLIENT_ID,
